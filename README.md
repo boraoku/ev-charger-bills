@@ -27,7 +27,7 @@ Prebuilt binaries are attached to each [GitHub release](https://github.com/borao
 | `evcharge-1.0-macos-arm64.zip` | Apple silicon only |
 | `evcharge-1.0-macos-x86_64.zip` | Intel only |
 
-Each archive holds the `evcharge` binary, a default `evcharge.conf` and this README. Requires
+Each archive holds the `evcharge` binary, a default `evcharge.conf`, this README and the licence. Requires
 macOS 12 or later. The binaries are ad-hoc signed, not notarised, so macOS blocks a downloaded
 copy at first. After unzipping, clear the quarantine flag once:
 
@@ -121,3 +121,7 @@ last-resort amount pattern needs `^`/`$` to anchor at line breaks.
 Pull requests that add Linux or Windows support are very welcome, as are new providers and
 better patterns. Please keep the macOS build working and dependency-free, and run the samples on
 every platform you touch before submitting.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

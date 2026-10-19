@@ -15,7 +15,7 @@ build() {   # $1 = label, remaining = -arch flags
         -framework Foundation -framework PDFKit -framework Vision \
         -framework CoreGraphics -framework CoreText -lz -o "$dir/evcharge"
     codesign --force --sign - "$dir/evcharge"          # ad-hoc signature
-    cp evcharge.conf README.md "$dir/"
+    cp evcharge.conf README.md LICENSE "$dir/"
     (cd dist && zip -qr "evcharge-$VERSION-macos-$label.zip" "evcharge-$VERSION-macos-$label")
     echo "Built dist/evcharge-$VERSION-macos-$label.zip"
 }
